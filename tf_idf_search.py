@@ -80,7 +80,7 @@ def compute_tf_idf(document: str, idf: dict) -> dict:
     # Compute TF-IDF
     # Implement your code here
     for w,tf_val in tf.items():
-        tf_idf[w]=tf_val*idf.get(w,0,0)
+        tf_idf[w]=tf_val*idf.get(w,0.0)
     return tf_idf
 
 
